@@ -7,7 +7,7 @@ package JacobWeek1TestPackage;
 
 /**
  *
- * @author BuRny
+ * @author Jacob
  */
 public class Hello {
     public static void main(String[] args){
