@@ -66,14 +66,13 @@ public class RockPaperScissors {
             do{ // ensure player chooses either "Yes" or "No", case sensitive as instructions were explicit with what the user should enter
                 System.out.println("Do you want to play again? (Yes/No)");
                 replay = scanner.nextLine();
-            // change below Strings to change input matched for replaying
             } while(!replay.equals("Yes") && !replay.equals("No"));
         } while (replay.equals("Yes"));
     }
     
     // HELPER FUNCTIONS
     private static int determineWinner(int player, int com){ // returns value representing result of round given choices, see map above (var: String[] selections)
-        if(player == com) // result is relative to player's perspective
+        if(player == com)
             return 0; // tie
         if((player == 0 && com == 1) || (player == 1 && com == 2) || (player == 2 && com == 0))
             return -1; // loss

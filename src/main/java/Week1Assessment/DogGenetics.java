@@ -15,7 +15,6 @@ public class DogGenetics {
                            + name + "'s prestigious background right here.\n");
         System.out.println(name + " is:\n");
         
-        // this random value assignment is biased, but most dugs are probably mostly one breed anyways
         int temp, sum = 0; // used to record percentage and percentages so far
         for(int i = breeds.length - 1; i > 0; --i){ // decrement makes it easier to sum to 100%
             temp = random.nextInt(101 - (i + 1) - sum) + 1; // leave at least 1% for each remaining breed, % must be >0

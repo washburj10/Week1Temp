@@ -7,19 +7,19 @@ public class LuckySevens {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int rolls = 0, cash = 0, max = 0, rollsAtMax = 0;
-        int die1, die2;
+        int di1, di2;
         
         System.out.println("How many dollars do you have?");
         cash = Integer.parseInt(scanner.nextLine());
         
         while(cash > 0){
             ++rolls;
-            die1 = random.nextInt(6) + 1;
-            die2 = random.nextInt(6) + 1;
+            di1 = random.nextInt(6) + 1;
+            di2 = random.nextInt(6) + 1;
             
-            if(die1 + die2 == 7){ // win
+            if(di1 + di2 == 7){ // win
                 cash += 4;
-                if(cash > max){ // record max and rolls
+                if(cash > max){
                     max = cash;
                     rollsAtMax = rolls;
                 }
